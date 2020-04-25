@@ -24,13 +24,13 @@ export default () => (
       }}>
       <Link to='/' sx={{ variant: 'styles.navlink', px: 2, color: 'white' }}>
         Home
-      </Link>
+      </Link>&nbsp;
       <Link to='/about' sx={{ variant: 'styles.navlink', px: 2, color: 'white' }}>
         About
-      </Link>
+      </Link>&nbsp;
       <Link to='/crisis' sx={{ variant: 'styles.navlink', px: 2, color: 'white', fontWeight: '800' }}>
         Crisis
-      </Link>
+      </Link>&nbsp;
       <div sx={{ mx: 'auto' }} />
       <Text>© 2020 <Link to='https://daltoncraven.me' sx={{ color: 'white' }}>Dalton Craven</Link></Text>
     </div>

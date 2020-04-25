@@ -31,7 +31,7 @@ export default () => (
           variant: 'styles.navlink',
         }}>
         About
-      </Link>
+      </Link>&nbsp;
       <Link to='/crisis'
         sx={{
           variant: 'styles.navlink',
