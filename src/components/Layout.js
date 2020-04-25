@@ -1,13 +1,24 @@
+/** @jsx jsx */
 import React from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-import { Container } from "theme-ui"
+import { jsx, Container } from "theme-ui"
 
-export default ({ children }) => (
-  <>
-    <Header />
-      <Container>{ children }</Container>
-    <Footer />
-  </>
-)
+export default ({ children }) =>
+  <div
+    sx={{
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '100vh',
+    }}><Header />
+    <main
+      sx={{
+        flex: '1 1 auto',
+      }}>
+      <Container>
+      {children}
+      </Container>
+    </main>
+  <Footer />
+  </div>
