@@ -4,7 +4,7 @@ const theme =
   layout: {
     container: {
       maxWidth: "1100px",
-      padding: [10, null, 0]
+      padding: 10
     }
   },
   colors: {
