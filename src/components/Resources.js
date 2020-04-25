@@ -28,7 +28,7 @@ const Resource = ({ name, description, link }) => (
 
 const StudentOrganizations = () => (
   <div>
-    <Heading variant="resource" sx={{ color: 'secondary' }}>Student Organizations</Heading>
+    <Heading variant="resource" sx={{ color: 'secondary', pt: [null, null, 0] }}>Student Organizations</Heading>
     <Resource name="Mental Health Ambassadors"
               description="Headed by Dr. April Scott, this program trains in mental health first-aid. They go to different student organizations to explain the mental health resources on-campus and how to get involved."
     />
@@ -41,7 +41,7 @@ const StudentOrganizations = () => (
 
 const StudentHealthServices = () => (
   <div>
-    <Heading variant="resource" sx={{ color: 'secondary' }}>Student Health Services</Heading>
+    <Heading variant="resource" sx={{ color: 'secondary', pt: [null, null, 0] }}>Student Health Services</Heading>
     <Resource name="Wellness Coaching"
               description="The wellness coaching program provides education, support, and encouragement to help in the following areas: balanced eating, physical activity, stress management, sleep, tobacco treatment, or resiliency."
               link="https://sc.edu/about/offices_and_divisions/student_health_services/wellness-prevention/stress-management/calm-oasis-space/index.php"

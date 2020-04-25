@@ -33,7 +33,6 @@ export const Link = ({
   }
   return (
     <a sx={{
-      textDecorationColor: theme => `${theme.colors.text}`,
       ':hover': {
         textDecorationColor: theme => `${theme.colors.primary}`
       },
