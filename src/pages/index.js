@@ -1,6 +1,6 @@
 import React from "react"
-import PrimaryContainer from "../components/PrimaryContainer"
+import Layout from "../components/Layout"
 import Resources from "../components/Resources"
 
 
-export default () => <PrimaryContainer><Resources /></PrimaryContainer>
+export default () => <Layout><Resources /></Layout>

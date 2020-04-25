@@ -7,7 +7,7 @@ import { Container } from "theme-ui"
 export default ({ children }) => (
   <>
     <Header />
-    <Container>{ children }</Container>
+      <Container>{ children }</Container>
     <Footer />
   </>
 )

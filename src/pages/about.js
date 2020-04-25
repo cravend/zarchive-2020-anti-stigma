@@ -1,6 +1,10 @@
 import React from "react"
-import PrimaryContainer from "../components/PrimaryContainer"
+import Layout from "../components/Layout"
 
 import { Heading } from 'theme-ui'
 
-export default () => <PrimaryContainer><Heading as="h1">About Us</Heading></PrimaryContainer>
+export default () => (
+  <Layout>
+    <Heading as="h1">About Us</Heading>
+  </Layout>
+)
