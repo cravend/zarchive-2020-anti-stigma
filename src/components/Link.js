@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Link as GatsbyLink } from "gatsby"
+import { Link as GatsbyLink } from 'gatsby'
 import { jsx } from 'theme-ui'
 
 export const Link = ({
@@ -32,14 +32,18 @@ export const Link = ({
     )
   }
   return (
-    <a sx={{
-      ':hover': {
-        textDecorationColor: theme => `${theme.colors.primary}`
-      },
-      ':active': {
-        textDecorationColor: theme => `${theme.colors.primary}`
-      }
-      }} href={to} {...other}>
+    <a
+      sx={{
+        ':hover': {
+          textDecorationColor: (theme) => `${theme.colors.primary}`,
+        },
+        ':active': {
+          textDecorationColor: (theme) => `${theme.colors.primary}`,
+        },
+      }}
+      href={to}
+      {...other}
+    >
       {children}
     </a>
   )

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Link } from "../components/Link"
+import { Link } from '../components/Link'
 
 import { jsx, Text } from 'theme-ui'
 
@@ -10,8 +10,9 @@ export default () => (
       color: 'background',
       bg: 'text',
       variant: 'styles.footer',
-      mt: 20
-    }}>
+      mt: 20,
+    }}
+  >
     <div
       sx={{
         display: 'flex',
@@ -21,19 +22,38 @@ export default () => (
         mx: 'auto',
         px: 2,
         py: 4,
-      }}>
-      <Link to='/' sx={{ variant: 'styles.navlink', px: 2, color: 'white' }}>
+      }}
+    >
+      <Link to="/" sx={{ variant: 'styles.navlink', px: 2, color: 'white' }}>
         Home
-      </Link>&nbsp;
-      <Link to='/about' sx={{ variant: 'styles.navlink', px: 2, color: 'white' }}>
+      </Link>
+      &nbsp;
+      <Link
+        to="/about"
+        sx={{ variant: 'styles.navlink', px: 2, color: 'white' }}
+      >
         About
-      </Link>&nbsp;
-      <Link to='/crisis' sx={{ variant: 'styles.navlink', px: 2, color: 'white', fontWeight: '800' }}>
+      </Link>
+      &nbsp;
+      <Link
+        to="/crisis"
+        sx={{
+          variant: 'styles.navlink',
+          px: 2,
+          color: 'white',
+          fontWeight: '800',
+        }}
+      >
         Crisis
-      </Link>&nbsp;
+      </Link>
+      &nbsp;
       <div sx={{ mx: 'auto' }} />
-      <Text>© 2020 <Link to='https://daltoncraven.me' sx={{ color: 'white' }}>Dalton Craven</Link></Text>
+      <Text>
+        © 2020{' '}
+        <Link to="https://daltoncraven.me" sx={{ color: 'white' }}>
+          Dalton Craven
+        </Link>
+      </Text>
     </div>
   </footer>
-
 )

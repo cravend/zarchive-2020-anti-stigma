@@ -1,11 +1,10 @@
 // example theme file
-const theme =
-{
+const theme = {
   layout: {
     container: {
-      maxWidth: "1100px",
-      padding: 10
-    }
+      maxWidth: '1100px',
+      padding: 10,
+    },
   },
   colors: {
     text: '#000',
@@ -24,7 +23,7 @@ const theme =
     resource: {
       pb: 2,
       pt: 3,
-    }
+    },
   },
   fontWeights: {
     body: 400,
@@ -49,9 +48,9 @@ const theme =
       color: 'black',
       mb: 0,
       p: 3,
-      fontSize: 3
-    }
-  }
+      fontSize: 3,
+    },
+  },
 }
 
 export default theme
