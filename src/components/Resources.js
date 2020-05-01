@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import React from "react"
 import { jsx, Box, Grid, Heading, Text } from 'theme-ui'
 import Link from "../components/Link"
 
@@ -7,10 +8,21 @@ const Resources = () => (
     <Grid gap={25} columns={[ 1, null, 2 ]}>
       <StudentOrganizations />
       <StudentHealthServices />
-    </Grid>
-    <Grid gap={25} columns={[ 1, null, 2 ]}>
       <SupportTrainings />
       <CounselingServices />
+    </Grid>
+  </div>
+)
+
+const CrisisResources = () => (
+  <div>
+    <Heading variant="resource" sx={{ color: 'secondary', pt: [null, null, 0] }}>Crisis Resources</Heading>
+    <Grid gap={25} columns={[ 1, null, 2 ]}>
+      <Resource name="National Suicide Prevention Lifeline" description={<><Link to="tel:8002738255">(800) 273-8255</Link> — The National Suicide Prevention Lifeline provides 24/7, free and confidential support for people in distress.</>} link="https://suicidepreventionlifeline.org/chat/" />
+      <Resource name="CAMHC Emergency Services" description={<><Link to="tel:8038988888">(803) 898-8888</Link> — Clinic open 8:30 a.m. to 5:00 p.m, staff on-call for emergencies 24 hours/day</>} link="https://scaccess.communityos.org/zf/profile/program/id/733775" />
+      <Resource name="SAMHSA National Hotline" description={<><Link to="tel:8006624357">(800) 662-4357</Link> —  A free, confidential, 24/7/365 treatment referral and information service (in English and Spanish) for individuals and families facing mental and/or substance use disorders.</>} link="https://www.samhsa.gov/find-help/national-helpline" />
+      <Resource name="National Alliance on Mental Health (NAMI)" description={<><Link to="tel:8009506264">(800) 950-6264</Link> or <Link to="sms://741741?&body=NAMI">text "NAMI" to 741741</Link> for crisis support. The link provides guides on how to plan for a mental health crisis</>} link="https://www.nami.org/About-NAMI/Publications-Reports/Guides/Navigating-a-Mental-Health-Crisis" />
+      <Resource name="NAMI — What to do in a Crisis Infographic" description="A single-page infographic on common how to handle a mental health emergency." link="https://www.nami.org/NAMI/media/NAMI-Media/Infographics/crisis%20guide/What-to-Do-in-a-Mental-Health-Crisis.pdf" />
     </Grid>
   </div>
 )
@@ -140,5 +152,5 @@ const CounselingServices = () => (
 )
 
 
-
 export default Resources
+export { CrisisResources }
